@@ -1,4 +1,4 @@
-SECRET_KEY='eventbuilder-key'
+SECRET_KEY='your-secret-key'
 WTF_CSRF_ENABLED = True
 DEBUG = True
 
