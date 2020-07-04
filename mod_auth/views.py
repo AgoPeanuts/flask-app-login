@@ -58,12 +58,6 @@ def login():
             if error is None:
                 # set loged in user
                 login_user(user)
-
-                # next = request.args.get('next')
-                # # is_safe_url should check if the url is safe for redirects.
-                # if not is_safe_url(next):
-                #     return abort(400)
-                # return redirect(next or url_for('main.index'))
                 return redirect(url_for('main.index'))
             flash(error, 'danger')
 
