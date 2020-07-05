@@ -282,7 +282,6 @@ def test_invalid_login(client, db, load_user, email, password, message):
         data=dict(email=email, password=password),
         follow_redirects=True)
 
-    print(response.data)
     assert response.status_code == 200
     assert message in response.data
 
